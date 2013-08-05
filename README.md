@@ -69,9 +69,12 @@ You do not need to pre-populate the `value` attribute in your templates. Instead
 ```javascript
 var product = ....; // fetch a product or create a new one
 var formHelper = new RhoTendon.FormHelper();
-formHelper.fillForm($("#product-edit-form"), product, ["name","brand"]); // take the name and brand attributes from the model and put their values in the input elements with the same names
+formHelper.fillForm($("#product-edit-form"), product, ["name","brand"]);
+// take the name and brand attributes from the model and put their values
+// in the input elements with the same names
 
 .... // show the form to the user
 
-formHelper.updateModel(product, form, ["name","brand"]); // take the name and brand values from the form and update the model with them
+formHelper.updateModel(product, $("#product-edit-form"), ["name","brand"]);
+// take the name and brand values from the form and update the model with them
 ```
