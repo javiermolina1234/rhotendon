@@ -78,3 +78,7 @@ formHelper.fillForm($("#product-edit-form"), product, ["name","brand"]);
 formHelper.updateModel(product, $("#product-edit-form"), ["name","brand"]);
 // take the name and brand values from the form and update the model with them
 ```
+
+## Why the name
+
+A tendon is "... tissue that links bone with muscle". RhoTendon links Backbone.js with the Rhom database engine.
